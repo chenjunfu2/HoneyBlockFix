@@ -1,9 +1,6 @@
 # HoneyBlockFix
 
-## Setup
+Fixes **MC-163196** and **MC-253245** on Minecraft 1.20.1
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+  - [MC-163196](https://mojira.dev/MC-163196): attachable blocks (levers, rails, torches, …) can now be placed on honey blocks, like slime blocks.
+  - [MC-253245](https://mojira.dev/MC-253245): rails no longer pop off when a piston moves a non-full block (honey block, soul sand, mud) beneath them.
