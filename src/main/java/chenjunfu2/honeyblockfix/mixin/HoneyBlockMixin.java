@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Intrinsic;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(HoneyBlock.class)
-public class HoneyBlockMixin extends TransparentBlock
+public abstract class HoneyBlockMixin extends TransparentBlock
 {
 	public HoneyBlockMixin(Settings settings)
 	{
@@ -20,7 +20,8 @@ public class HoneyBlockMixin extends TransparentBlock
 	
 	@Override
 	@Intrinsic(displace = true)
-	public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos) {
+	public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos)
+	{
         return VoxelShapes.fullCube();
     }
 }

@@ -3,7 +3,8 @@
   "package": "chenjunfu2.honeyblockfix.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "HoneyBlockMixin"
+    "HoneyBlockMixin",
+    "PistonExtensionBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
